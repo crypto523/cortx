@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+main {
+  @apply max-w-screen-xl mx-auto flex flex-col;
+}
+
+header,
+section {
+  @apply px-5 md:px-10;
+}
+
+a {
+  @apply hover:text-secondary dark:hover:text-gray-200 transition-colors;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    /* border-radius: 5px; */
+    /* background: #fff; */
+    @apply bg-black dark:bg-black;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    /* background: #000; */
+    /* border-radius: 100vh; */
+    /* border: 3px solid #fff; */
+    @apply bg-gray-200 dark:bg-gray-600 border border-white rounded-sm;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #000; */
+    @apply bg-gray-500;
+  }
+}
+.fade-out {
+  animation: fade-out 1s ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

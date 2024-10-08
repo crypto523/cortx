@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://quivr.app
+
+# Sitemaps
+Sitemap: https://quivr.app/sitemap.xml
